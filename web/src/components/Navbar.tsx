@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+import "../styles/navbar.scss";
 import Login from "./Login";
 
 function Navbar() {
@@ -5,8 +8,11 @@ function Navbar() {
     <nav>
       <ul>
         <li>
-          <Login />
+          <Link to="/">Home</Link>
         </li>
+      </ul>
+      <ul>
+        <Login />
       </ul>
     </nav>
   );

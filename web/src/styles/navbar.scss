@@ -1,0 +1,23 @@
+@import "./colors.scss";
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $black2;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin: 5px;
+  display: inline-block;
+}
+
+img {
+  max-width: 30px;
+  border-radius: 15px;
+}

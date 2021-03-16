@@ -17,8 +17,12 @@ router.get("/", async (req, res) => {
     return;
   }
 
-  console.log(discordUser.data);
-  res.status(200).json(discordUser.data);
+  res.status(200).json({
+    id: discordUser.data.id,
+    username: discordUser.data.username,
+    discriminator: discordUser.data.discriminator,
+    avatar: discordUser.data.avatar,
+  });
 });
 
 export default router;
