@@ -4,8 +4,8 @@ function Logout() {
   return (
     <button
       onClick={() => {
-        localStorage.removeItem("token");
-        localStorage.removeItem("tokenType");
+        localStorage.removeItem("tokenLS");
+        localStorage.removeItem("tokenTypeLS");
       }}
     >
       Logout
